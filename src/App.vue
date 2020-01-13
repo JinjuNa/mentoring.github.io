@@ -9,7 +9,7 @@
 
 <script>
 import Menu from './components/Menu.vue'
-import Main from './components/Main.vue'
+import Main from './components/Main/Main.vue'
 // import MainSlider from './components/MainSlider.vue'
 
 export default {
