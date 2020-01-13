@@ -1,8 +1,7 @@
 <template>
   <div class="menu">
-    <ul>
-        <li v-bind:key="item.text" v-for="item in menu" ><a href="#"><img :src="item.img" alt="">{{item.text}}</a></li>
-        <img src="../assets/menu1.png" alt="">
+    <ul class="gnb">
+        <li v-bind:key="item.text" v-for="item in menu" ><a :href="'/'+item.text">{{item.text}}</a></li>
     </ul>
   </div>
 </template>
@@ -13,11 +12,11 @@ export default {
   data : function() {
     return {
       menu : [
-          {text : "vision", img : "@src/assets/menu1.png"},
-          {text : "history", img : "@src/assets/menu2.png"},
-          {text : "program", img : "@src/assets/menu3.png"},
-          {text : "recruit", img : "@src/assets/menu4.png"},
-          {text : "contact", img : "@src/assets/menu5.png"}
+          {text : "VISION", img : require("../assets/menu1.png")},
+          {text : "HISTORY", img : require("../assets/menu2.png")},
+          {text : "PROGRAM", img : require("../assets/menu3.png")},
+          {text : "RECRUIT", img : require("../assets/menu4.png")},
+          {text : "CONTACT", img : require("../assets/menu5.png")}
       ]
     };
 }
