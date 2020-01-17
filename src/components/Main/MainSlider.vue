@@ -1,11 +1,11 @@
 <template>
   <div class="mainSlider">
-      <ul class="pager">
+      <!-- <ul class="pager">
           <li><a href="#">01</a></li>
           <li><a href="#">02</a></li>
           <li><a href="#">03</a></li>
           <li><a href="#">04</a></li>
-      </ul>
+      </ul> -->
 
       <div class="slider">
         <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true">
@@ -44,5 +44,16 @@ export default {
 <style scoped>
   .slider{
     background-color: gold;
+    margin-top:500px;
+    height: 520px;
+    /* position: absolute; */
+
+  }
+
+  .mainSlider{
+    width: 1170px;
+    margin:0 auto;
+    /* height: 1530px; */
+    /* position:relative; */
   }
 </style>
