@@ -1,6 +1,6 @@
 <template>
   <div class="sub">
-    <Sub></Sub>
+    <SubTitle></SubTitle>
     <div class="vision">
       <div class="contents">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
@@ -15,33 +15,40 @@
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Sub from './Sub/Sub'
+import SubTitle from './Sub/SubTitle'
 export default {
   name: 'Vision',
   components : {
-    Sub
+    SubTitle
   }
 }
 </script>
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   .contents{
     width: 570px;
     margin: 0 auto;
+  }
+
+  .sub{
+    background-image: url(../assets/background_side.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
   }
 </style>
