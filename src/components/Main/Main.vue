@@ -56,6 +56,12 @@ export default {
     /* line-height: 450px; */
     text-align: center;
     /* background-color: #493fd3; */
+    transition: all 2s;
+  }
+
+  .mainLink:hover{
+    width:480px;
+    height: 480px;
   }
 
   .blue{
