@@ -8,21 +8,41 @@
       </ul>
 
       <div class="slider">
-        슬라이더 내용
+        <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true">
+          <slide>
+            Slide 1 Content
+          </slide>
+          <slide>
+            Slide 2 Content
+          </slide>
+          <slide>
+            Slide 3 Content
+          </slide>
+          <slide>
+            Slide 4 Content
+          </slide>
+        </carousel>
       </div>
   </div>
 </template>
 
 <script>
 // import mainSlider from './components/MainSlider.vue'
+import { Carousel, Slide } from 'vue-carousel';
 
 export default {
-  name: 'Mainslider'
+  name: 'Mainslider',
+  components : {
+    Carousel,
+    Slide
+  }
 
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .slider{
+    background-color: gold;
+  }
 </style>
