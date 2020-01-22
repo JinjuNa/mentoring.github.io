@@ -1,15 +1,17 @@
 <template>
     <div class="sub_title">
         <img class="sub_effect" src="../../assets/sub_effect.png" alt="">
-        <p class="title_text">VISION
-            <!-- {{title.text}} -->
+        <p class="title_text">
+            <!-- VISION -->
+            {{titledata}}
         </p>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'SubTitle'
+  name: 'SubTitle',
+  props : ['titledata']
 }
 </script>
 
