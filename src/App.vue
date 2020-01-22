@@ -74,4 +74,24 @@ export default {
     /* height: 460px; */
     /* z-index: 100; */
   }
+
+  .contents>h2{
+    text-align:center;
+    color:blue;
+    /* 색깔 정보를 알아야함. */
+    margin-top:50px;
+    margin-bottom:50px;
+    line-height:40px;
+  }
+
+  .par{
+    text-align:center;
+    color:blue;
+    margin-top:30px;
+    line-height:30px;
+  }
+
+  .par:first-child{
+    margin-top:0px;
+  }
 </style>
