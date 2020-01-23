@@ -3,8 +3,6 @@
     <div id="logo"><a href="/"><img src="./assets/main_logo.png"></a></div>
     <Menu></Menu>
     <router-view></router-view>
-    <!-- <Main></Main> -->
-    <!-- <MainSlider></MainSlider> -->
     <Footer></Footer>
   </div>
 </template>
@@ -31,7 +29,9 @@ export default {
     margin:0;
     padding: 0;
   }
-
+  body{
+    font-size:62.5%;
+  }
   ul {
     list-style: none;
   }
@@ -50,6 +50,15 @@ export default {
     top:40px;
     left:50px;
   }
+
+  #logo img{
+    width: 10vw;
+  }
+
+  .wrap{
+    width:60%;
+    margin:0 auto;
+  }
   .menu{
     position:fixed;
     top:40px;
@@ -59,9 +68,12 @@ export default {
 
   .main{
     margin:0 auto;
-    padding-top: 200px;
+    padding-top: 10vw;
     background-image: url(./assets/background.png);
     padding-bottom: 460px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat:no-repeat;
   }
   .sub{
     padding-bottom: 460px;

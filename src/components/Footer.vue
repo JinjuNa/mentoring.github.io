@@ -16,7 +16,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .footer{
-      height: 473px;
+      height: 25vw;
       background-image: url(../assets/footer_background.png);
       background-size: 100% auto;
       background-repeat: no-repeat;
@@ -24,10 +24,10 @@ export default {
   }
 
   .footer_contents{
-      width:fit-content;
+      /* width:fit-content; */
       position:absolute;
       left:50%;
-      bottom:90px;
+      bottom:5vw;
       text-align: center;
       vertical-align: bottom;
       margin-left:-120px;

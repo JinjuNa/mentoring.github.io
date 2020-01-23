@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <div class="wrap">
     <h1><a href="/"><img src="../../assets/logo.png" alt="메인로고"></a></h1>
     <div class="mainLink_wrap">
     <div class="mainLink blue">
@@ -16,6 +17,7 @@
     </div>
     </div>
     <Mainslider></Mainslider>
+    </div>
   </div>
 </template>
 
@@ -36,6 +38,11 @@ export default {
   h1{
     text-align: center;
   }
+
+  h1 img{
+    width: 48%;
+    height: auto;
+  }
   .mainLink_wrap::after{
     display: block;
     clear:both;
@@ -43,39 +50,47 @@ export default {
   }
 
   .mainLink_wrap{
-    margin: 0 auto;
+    margin-top:2vw;
+    position: relative;
+    /* margin: 0 auto;
     margin-top:40px;
-    width: fit-content;
+    width: 48vw; */
   }
   .mainLink{
-    width: 450px;
-    height: 450px;
+    width: 23vw;
+    height: 23vw;
     border-radius: 50%;
     float: left;
-    font-size: 40px;
+    font-size: 2rem;
     /* line-height: 450px; */
     text-align: center;
     /* background-color: #493fd3; */
     transition: all 2s;
+    position: absolute;
+    top:0;
+    left: 50%;
   }
 
   .mainLink:hover{
-    width:480px;
-    height: 480px;
+    width:23.5vw;
+    height: 23.5vw;
+    
   }
 
   .blue{
     background-color: #493fd3;
-    margin-right: 30px;
+    margin-right: 2vw;
     color:#c4f580;
+    margin-left: -24.5vw
   }
 
   .green{
     background-color: #c4f580;
     color: #493fd3;
+    margin-right: -24.5vw;
   }
   .mainLink p{
-    margin-top:150px;
+    margin-top:32%;
   }
   .link{
     width: 190px;
@@ -85,7 +100,7 @@ export default {
     display: inline-block;
     font-size: 18px;
     line-height: 35px;
-    margin-top:55px;
+    margin-top:14%;
     
   }
 

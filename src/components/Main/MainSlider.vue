@@ -44,14 +44,14 @@ export default {
 <style scoped>
   .slider{
     background-color: gold;
-    margin-top:500px;
+    margin-top:60vw;
     height: 520px;
     /* position: absolute; */
 
   }
 
   .mainSlider{
-    width: 1170px;
+    width: 100%;
     margin:0 auto;
     /* height: 1530px; */
     /* position:relative; */

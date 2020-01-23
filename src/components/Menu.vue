@@ -41,14 +41,14 @@ export default {
     
   }
   .menuButton span{
-    width:41px;
+    width:2.5rem;
     height: 4px;
     background-color: #000000;
     display: block;
     margin-bottom: 10px;
   }
   .gnb{
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 0.305em;
     }
   .gnb li{
