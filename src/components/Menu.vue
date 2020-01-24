@@ -8,11 +8,13 @@
     <ul class="gnb">
         <li v-bind:key="item.text" v-for="item in menu" >
           <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
-          <!-- <a :href= "'#/'+item.url">{{item.text}} -->
-          
-          <!-- </a> -->
-        
         </li>
+    </ul>
+
+    <ul class="subMenu">
+      <li v-bind:key="item.text" v-for="item in submenu" >
+          <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -23,11 +25,17 @@ export default {
   data : function() {
     return {
       menu : [
-          {text : "VISION", url : "/vision",img : require("../assets/menu1.png")},
-          {text : "HISTORY", url : "/history", img : require("../assets/menu2.png")},
-          {text : "PROGRAM", url : "/program", img : require("../assets/menu3.png")},
-          {text : "RECRUIT", url : "/recruit", img : require("../assets/menu4.png")},
-          {text : "CONTACT", url : "/contact", img : require("../assets/menu5.png")}
+          {text : "VISION", url : "/vision"},
+          {text : "HISTORY", url : "/history"},
+          {text : "PROGRAM", url : "/program/school/vision"},
+          {text : "RECRUIT", url : "/recruit"},
+          {text : "CONTACT", url : "/contact"}
+      ],
+      submenu : [
+        {text : "스쿨과정", url : "/program/school/vision"},
+        {text : "비발디", url : "/program/vivaldi"},
+        {text : "크공비", url : "/program/kgongvi"},
+        {text : "실크로드", url : "/program/silkroad"}
       ]
     };
 }

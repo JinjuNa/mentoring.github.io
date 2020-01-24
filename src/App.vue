@@ -10,16 +10,12 @@
 <script>
 import Menu from './components/Menu.vue'
 import Footer from './components/Footer'
-// import Main from './components/Main/Main.vue'
-// import MainSlider from './components/MainSlider.vue'
 
 export default {
   name: 'app',
   components: {
     Menu,
     Footer
-    // Main
-    // MainSlider
   }
 }
 </script>
