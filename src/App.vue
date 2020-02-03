@@ -102,4 +102,8 @@ export default {
   .par:first-child{
     margin-top:0px;
   }
+
+  /* .line{
+    초록색밑줄-메뉴와 동일
+  } */
 </style>
