@@ -1,15 +1,24 @@
 <template>
   <div class="sub">
     <SubTitle v-bind:titledata = "title"></SubTitle>
-    <!--  -->
     <div class="program slikroad">
       <div class="contents">
-        <p>실크로드 관련 내용</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>
+          <span></span>
+          <span>
+            실력있는<br>
+            크리에이터가<br>
+            되는 길
+          </span>
+          살아가면서 필요한 지혜들을 강연을 통해 공유하고<br>
+          함께 배워보는 강연 프로그램
+        </h2>
+        <p>인문학,철학,경제,시간관리,인간관계,공부,습관에 이르기까지...<br>
+        다양한 삶의 지혜들을 윤성화 소장님의 직강을 통해 함께 공부해보는 시간입니다.<br><br>
+        격월로 행사가 진행되며 연령,성별,직업에 상관없이 누구든 참여 가능합니다.
+        </p>
       </div>
+      <a href="#">연간 멤버십 할인받기</a>
     </div>
   </div>
 </template>
