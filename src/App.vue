@@ -26,7 +26,7 @@ export default {
     padding: 0;
   }
   body{
-    font-size:62.5%;
+    font-size:62.51%;
   }
   ul {
     list-style: none;
@@ -85,24 +85,35 @@ export default {
 
   .contents>h2{
     text-align:center;
-    color:blue;
+    color:rgb(70,82,184);
     /* 색깔 정보를 알아야함. */
-    margin-top:50px;
-    margin-bottom:50px;
-    line-height:40px;
+    margin-top:7.5em;
+    margin-bottom:4.43em;
+    line-height:170%;
+    font-size: 231%;
   }
 
   .par{
+    font-size: 149.3%;
     text-align:center;
-    color:blue;
-    margin-top:30px;
-    line-height:30px;
+    color:rgb(70,82,184);
+    font-weight: bolder;
+    margin-top:4.06em;
+    margin-bottom: 4.06em;
+    /* 내용 전체 위,아래 margin 값을 측정해야함. */
+    line-height:200%;
   }
 
   .par:first-child{
     margin-top:0px;
   }
 
+  .download{
+    display: block;
+    width: 30%;
+    height: auto;    
+    /* 중앙정렬 해야함 */
+  }
   /* .line{
     초록색밑줄-메뉴와 동일
   } */
