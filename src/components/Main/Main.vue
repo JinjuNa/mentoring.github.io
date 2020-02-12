@@ -71,11 +71,11 @@ export default {
     left: 50%;
   }
 
-  .mainLink:hover{
+  /* .mainLink:hover{
     width:23.5vw;
     height: 23.5vw;
     
-  }
+  } */
 
   .blue{
     background-color: #493fd3;

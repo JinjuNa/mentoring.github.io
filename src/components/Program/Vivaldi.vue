@@ -4,12 +4,24 @@
     <!--  -->
     <div class="program vivaldi">
       <div class="contents">
-        <p>history</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>
+          <span></span>
+          <span>
+            비전을<br>
+            발견하고<br>
+           디자인하라<br>
+          </span>
+          꿈과 비전을 찾아가는 사람들이 한 자리에 모여서<br>
+          각자의 꿈과 비전을 어떤 방식으로 찾아가는지<br>
+          혹은 지금의 고민이 무엇인지를 나누는 네트워킹 파티
+        </h2>
+        <p>아이스브레이킹,강연,공연,네트워킹 파티로 이어지는<br>
+        알짜배기 하루를 보내고 싶다면 강력 추천합니다.<br><br>
+        격월 1회로 행사가 진행되며 연령,성별,직업에 상관없이<br>
+        누구든 참여 가능합니다.
+        </p>
       </div>
+      <a href="#">연간 멤버십 할인받기</a>
     </div>
   </div>
 </template>
