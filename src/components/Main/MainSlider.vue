@@ -10,16 +10,16 @@
       <div class="slider">
         <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true">
           <slide>
-            Slide 1 Content
+            <img src="../../assets/slide1.png">
           </slide>
           <slide>
-            Slide 2 Content
+            <img src="../../assets/slide2.png">
           </slide>
           <slide>
-            Slide 3 Content
+            <img src="../../assets/slide3.png">
           </slide>
           <slide>
-            Slide 4 Content
+            <img src="../../assets/slide4.png">
           </slide>
         </carousel>
       </div>
@@ -43,11 +43,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .slider{
-    background-color: gold;
+    /* background-color: gold; */
     margin-top:60vw;
     height: 520px;
     /* position: absolute; */
 
+  }
+
+  .slider img{
+    width:100%;
   }
 
   .mainSlider{
