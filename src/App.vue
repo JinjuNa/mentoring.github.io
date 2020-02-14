@@ -85,7 +85,7 @@ export default {
 
   .contents>h2{
     text-align:center;
-    color:rgb(70,82,184);
+    color:#3642c6;
     /* 색깔 정보를 알아야함. */
     margin-top:7.5em;
     margin-bottom:4.43em;
@@ -96,9 +96,9 @@ export default {
   .par{
     font-size: 149.3%;
     text-align:center;
-    color:rgb(70,82,184);
+    color:#3642c6;
     font-weight: bolder;
-    margin-top:4.06em;
+    /* margin-top:4.06em; */
     margin-bottom: 4.06em;
     /* 내용 전체 위,아래 margin 값을 측정해야함. */
     line-height:200%;
@@ -109,12 +109,25 @@ export default {
   }
 
   .download{
+    text-align: center;
+    border:solid 0.2em #c4f580;
+    border-radius: 15px;
+    width: 11.87em;
+    height: 2.18em;
+    color: #3642c6;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 2.18em;
+  }
+  /* .download{
     display: block;
     width: 30%;
     height: auto;    
     /* 중앙정렬 해야함 */
-  }
-  /* .line{
+    /* .line{
     초록색밑줄-메뉴와 동일
   } */
 </style>
