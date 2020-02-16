@@ -16,8 +16,9 @@
         </div>  
     </div>
     </div>
-    <Mainslider></Mainslider>
     </div>
+    <Mainslider></Mainslider>
+    
   </div>
 </template>
 
@@ -36,6 +37,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   h1{
+    padding-top:10vw;
     text-align: center;
   }
 
@@ -60,8 +62,7 @@ export default {
     width: 23vw;
     height: 23vw;
     border-radius: 50%;
-    float: left;
-    font-size: 2rem;
+    font-size: 2vw;
     /* line-height: 450px; */
     text-align: center;
     /* background-color: #493fd3; */
@@ -90,17 +91,23 @@ export default {
     margin-right: -24.5vw;
   }
   .mainLink p{
-    margin-top:32%;
+    position: absolute;
+    top:50%;
+    margin-top:-20%;
+    width: 100%;
   }
   .link{
-    width: 190px;
-    height: 35px;
+    width: 50%;
     text-align: center; 
-    border-radius: 17.5px;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 35px;
-    margin-top:14%;
+    border-radius: 100px;
+    /* display: inline-block; */
+    font-size:1.5vw;
+    line-height: 2;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -30%;
+    left:50%;
+    transform: translateX(-50%)
     
   }
 
@@ -111,5 +118,40 @@ export default {
 
   .green .link{
     border: 2px solid #493fd3;
+  }
+
+  
+  @media all and (max-width:1023px) {
+    body{
+      background-color: gold;
+    }
+
+    .wrap{
+      width:90%;
+    }
+
+    h1 img{
+      display: none;
+    }
+
+    .mainLink{
+      position: relative;
+      top:0;
+      left: 0;
+      margin: 0 auto;
+      width: 50vw;
+      height: 50vw;
+      font-size: 4vw;
+    }
+
+    .mainLink.green{
+      margin-top:10%;
+    }
+
+    .link{
+      width: 40%;
+      font-size: 2.5vw;
+
+    }
   }
 </style>

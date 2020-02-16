@@ -1,5 +1,6 @@
 <template>
   <div class="mainSlider">
+  <div class="mainSlider_wrap">
       <!-- <ul class="pager">
           <li><a href="#">01</a></li>
           <li><a href="#">02</a></li>
@@ -24,6 +25,7 @@
         </carousel>
       </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -44,20 +46,51 @@ export default {
 <style scoped>
   .slider{
     /* background-color: gold; */
-    margin-top:60vw;
-    height: 520px;
+    padding-top:20vh;
+    height: 80vh;
+    padding-bottom: 50vh;
     /* position: absolute; */
-
+    width:70vw;
+    margin:0 auto;
   }
 
   .slider img{
     width:100%;
   }
 
-  .mainSlider{
-    width: 100%;
+  .mainSlider_wrap{
+    width: 90%;
     margin:0 auto;
-    /* height: 1530px; */
-    /* position:relative; */
+  }
+
+.mainSlider{
+  position: relative;
+  background-color:#493fd3;
+  margin-top:calc(80vh + 100px);
+}
+  .mainSlider:before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-100px;
+    width:100%;
+    height:400px;
+    /* padding-top: 10vw; */
+    background-image: url(../../assets/background.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat:no-repeat;
+  }
+
+  @media all and (max-width:1023px){
+    .mainSlider{
+      margin-top:15vh;
+    }
+
+    .slider{
+      padding-top:5vh;
+      height:30vh;
+      padding-bottom:0;
+    }
   }
 </style>

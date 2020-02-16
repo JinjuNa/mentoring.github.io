@@ -62,15 +62,6 @@ export default {
     text-align: right;
   }
 
-  .main{
-    margin:0 auto;
-    padding-top: 10vw;
-    background-image: url(./assets/background.png);
-    padding-bottom: 460px;
-    background-size: cover;
-    background-position: center top;
-    background-repeat:no-repeat;
-  }
   .sub{
     padding-bottom: 460px;
   }
@@ -117,4 +108,19 @@ export default {
   /* .line{
     초록색밑줄-메뉴와 동일
   } */
+  @media all and (max-width:1023px){
+    #logo{
+      position: static;
+      text-align: center;
+      padding-top:5vw;
+    }
+
+    #logo img{
+      width: 50vw;
+    }
+
+    .menu{
+      right: 20px;
+    }
+  }
 </style>

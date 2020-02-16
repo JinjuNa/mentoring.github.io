@@ -99,5 +99,13 @@ export default {
     width: 130px;
   }
 
+  @media all and (max-width:1023px){
+    .gnb{
+      display: none;
+    }
 
+    .subMenu{
+      display: none;
+    }
+  }
 </style>
