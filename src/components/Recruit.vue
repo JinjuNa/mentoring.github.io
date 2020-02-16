@@ -334,5 +334,10 @@ return {
   .icon li p{
     font-size:12px;
   } */
-
+@media all and (max-width:1023px){
+  .char1, .char2{
+    margin:0;
+    width:100%;
+  }
+}
 </style>

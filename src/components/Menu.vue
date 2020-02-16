@@ -1,11 +1,11 @@
 <template>
   <div class="menu">
-    <div class="menuButton">
+    <div class="menuButton" id="menuButton">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <ul class="gnb">
+    <ul class="gnb" id="gnb">
         <li v-bind:key="item.text" v-for="item in menu" >
           <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
         </li>
@@ -20,6 +20,16 @@
 </template>
 
 <script>
+
+window.onload = function(){
+  document.getElementById("menuButton").onclick = function(){
+    var gnb = document.getElementById("gnb");
+    if(gnb.style.display == "none")
+      gnb.style.display = "block";
+    else
+      gnb.style.display = "none";
+  }
+}
 export default {
   name: 'Menu',
   data : function() {
@@ -54,6 +64,10 @@ export default {
     background-color: #000000;
     display: block;
     margin-bottom: 10px;
+  }
+
+  .gnb, .subMenu{
+    z-index: 10;
   }
   .gnb{
     font-size: 1rem;

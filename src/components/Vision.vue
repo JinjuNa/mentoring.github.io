@@ -48,7 +48,7 @@ return {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .contents{
-    width: 570px;
+    width: 61%;
     margin: 0 auto;
   }
 
@@ -64,4 +64,12 @@ return {
     height: auto;
     /* text-align: center;  이렇게는 안된다.*/
   }
+
+  @media all and (max-width:1023px){
+    .contents{
+      width:95%;
+    }
+  }
+
+
 </style>
